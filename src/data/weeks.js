@@ -77,7 +77,7 @@ export const weeks = [
     total: '$19.06',
     perBox: '$3.18 / box',
     photo: true,
-    img: null,
+    img: 'images/week4.png',
   },
   {
     n: 5,
