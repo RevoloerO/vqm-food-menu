@@ -3,6 +3,7 @@ export const PLACEMENT_TOTAL_WEEKS = 56;
 export const weeks = [
   {
     n: 1,
+    proteins: ['Chicken', 'Egg'],
     dates: 'Jun 22 – 26, 2026',
     status: 'locked',
     components: [
@@ -21,6 +22,7 @@ export const weeks = [
   },
   {
     n: 2,
+    proteins: ['Pork', 'Egg'],
     dates: 'Jun 29 – Jul 3, 2026',
     status: 'locked',
     components: [
@@ -40,6 +42,7 @@ export const weeks = [
   },
   {
     n: 3,
+    proteins: ['Beef', 'Egg'],
     dates: 'Jul 6 – 10, 2026',
     status: 'locked',
     components: [
@@ -60,6 +63,7 @@ export const weeks = [
   },
   {
     n: 4,
+    proteins: ['Chicken', 'Egg'],
     dates: 'Jul 13 – 17, 2026',
     status: 'locked',
     components: [
@@ -81,6 +85,7 @@ export const weeks = [
   },
   {
     n: 5,
+    proteins: ['Pork', 'Sausage', 'Egg'],
     dates: 'Jul 20 – 24, 2026',
     status: 'locked',
     components: [
@@ -101,6 +106,7 @@ export const weeks = [
   },
   {
     n: 6,
+    proteins: ['Beef', 'Egg'],
     dates: 'Jul 27 – 31, 2026',
     status: 'locked',
     components: [
@@ -120,11 +126,33 @@ export const weeks = [
   },
   {
     n: 7,
+    proteins: ['Chicken', 'Pork', 'Egg'],
     dates: 'Aug 3 – 7, 2026',
+    status: 'locked',
+    components: [
+      { label: 'White rice', color: '#d8c9a8' },
+      { label: 'Creamy chicken thigh + cauliflower', color: 'var(--chili)' },
+      { label: 'Maple bacon', color: '#d8742a' },
+      { label: 'Soy-marinated egg ×3/box', color: 'var(--yolk)' },
+    ],
+    technique:
+      "Creamy chicken and cauliflower — first cream-sauce week in the rotation. Thighs pre-boiled to half-done and the broth reserved as the sauce liquid; maple bacon rendered first and its fat used as the entire cooking fat. Cooked in 2 batches (4 thighs each): half can of cream of mushroom + equal volume reserved broth + sugar, salt and paprika, mixed as one sauce bowl per batch. Paprika carries the color — dose held small by cook's call and the result was the intended warm gold, not a miss. Maple bacon is load-bearing, not garnish: the sweet cure echoes the sugar in the sauce, so it reads as part of the dish; plain bacon would fight it. Bacon plated on the rice side, not stirred in, so each box has a plain-rice bite and a sweet-sauce bite. 7 portions from 8 thighs — 5 larger to the weekday boxes, 3 smaller split across Sunday and a Saturday overtime contingency.",
+    recipe: '/recipes',
+    breakdown:
+      'chicken thighs $11.37 (2 packs) · cauliflower $3.97 · maple bacon 12oz $4.47 · eggs $2.43 (18ct + 3 carryover from W6 = 21, exactly 3/box) · GV cream of mushroom 737g $1.68 · soy sauce ~$0.56 (⅓ of $1.68 bottle) · paprika ~$0.05 (amortized from $1.08) · rice ~$1.00',
+    total: '~$25.53',
+    perBox: '$3.65 / portion × 7',
+    photo: true,
+    img: 'images/week7.png',
+  },
+  {
+    n: 8,
+    proteins: [],
+    dates: 'Aug 10 – 14, 2026',
     status: 'tbd',
     components: [],
     technique:
-      "Candidates on deck: cà ri gà (southern-style chicken curry, ginger-free — reduced-liquid + browned-not-fried renovation planned) · xíu mại (protein variety, ground-pork based). Velveted beef technique effectively covered by Week 6's bare stir-fry, though not a true velveting marinade.",
+      'Candidates on deck: cà ri gà (southern-style chicken curry, ginger-free — reduced-liquid + browned-not-fried renovation planned) · xíu mại (protein variety, ground-pork based) · hủ tiếu khô with actual ground pork.',
     breakdown: null,
     total: null,
     perBox: null,

@@ -142,4 +142,39 @@ export const recipes = [
     mealPrepNote:
       'Two-batch cook was a pan-size constraint, not a technique choice — if a larger pan becomes available, this collapses to one batch. Beef only needs to be "over half cooked" at the stir-fry stage since carryover heat and reheating finish it — don\'t oversear in the pan or it will be tough by the time it\'s reheated.',
   },
+  {
+    id: 'creamy-chicken-cauliflower',
+    tag: 'Week 7 · Locked 08/03/26',
+    title: 'Creamy Chicken & Cauliflower with Maple Bacon',
+    meta: 'Yields 7 portions (5 weekday + Sunday + Saturday OT contingency) · cooked in 2 batches · ~$3.65/portion',
+    note: 'No oil and no separate pork fat — the rendered maple bacon fat is the only cooking fat used in the whole dish. Ingredients listed for the whole cook, split in half across 2 batches.',
+    ingredients: [
+      { name: 'Chicken thighs, bone-in', amt: '8 (2 packs of 4)' },
+      { name: 'Reserved chicken broth (from the pre-boil)', amt: 'equal volume to the soup' },
+      { name: 'Maple bacon', amt: '12 oz — rendered for fat, bits reserved' },
+      { name: 'Cauliflower, cut into florets', amt: '1 head (half per batch)' },
+      { name: 'Great Value cream of mushroom, condensed', amt: '1 can 737g (half per batch)' },
+      { name: 'Sugar', amt: '3 spoons per batch' },
+      { name: 'Salt', amt: '1 spoon per batch' },
+      { name: 'Paprika (for color)', amt: '1 small spoon per batch' },
+      { name: 'Soy-marinated eggs (trứng ngâm tương)', amt: '21 total — 3 per box' },
+      { name: 'White rice', amt: '7 portions' },
+    ],
+    steps: [
+      'Pre-boil the thighs to half-done, not cooked through. Keep the broth — it is the sauce liquid, do not discard.',
+      'Lay the maple bacon in the pan and render out the fat. Remove the bacon and set the bits aside; the fat stays in the pan.',
+      'Mix the sauce bowl for this batch: half the can of cream of mushroom + the same volume of reserved broth + 3 spoons sugar + 1 spoon salt + 1 small spoon paprika. Mix until fully combined and evenly colored.',
+      'In the bacon fat, stir-fry 4 thighs until golden on the outside. Remove to a plate.',
+      'In the same fat, stir-fry half the cauliflower until cooked through.',
+      'Pour in the sauce bowl. Return the 4 thighs and let everything simmer together until the chicken is finished and the sauce coats.',
+      'Repeat steps 3–6 for the second batch — half can of soup, half the cauliflower, the other 4 thighs.',
+      'Assemble: rice on one side, chicken + cauliflower + sauce on the other, bacon bits on the rice side, 3 soy-marinated eggs per box.',
+    ],
+    renovation: {
+      label: "Cook's method (as actually cooked)",
+      text: 'Maple bacon specifically — not plain bacon. The sweet cure echoes the 3 spoons of sugar in the sauce, so the bacon reads as part of the dish rather than a salty topping sitting on it; plain bacon pulls the other way and makes the sweetness feel like a mistake. The render fat is the delivery mechanism: cooking everything in it puts the sweet-cured note into the sauce base, not just into the flecks. Paprika at 1 small spoon per batch is the recorded dose — it produced the warm gold the cook wanted against white rice and white cauliflower. No carrot, no bell pepper, no green; the color plan is paprika + bacon + browned chicken skin only.',
+    },
+    mealPrepNote:
+      'Bacon goes on the rice, not into the sauce. Since the sauce is already sweet, plating the bacon separately gives each box a plain-rice bite and a sweet-sauce bite; stirring it through flattens that. Crisp is gone by day 2 either way — by then it is flavor and color, not texture. Pre-boiling the thighs and using the reserved broth as the sauce liquid is what gives the sauce body without cream and keeps the meat from going stringy by Friday — keep this sequence. Eggs: 21 needed at 3/box × 7 — an 18-count plus 3 carried over from Week 6, no reserve left. Do not skip the sodium check: canned soup plus bacon stacks, so 1 spoon salt per batch is the ceiling.',
+  },
 ];

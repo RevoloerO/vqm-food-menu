@@ -1,9 +1,37 @@
+import { useMemo, useState } from 'react';
 import { weeks, PLACEMENT_TOTAL_WEEKS } from '../data/weeks.js';
 import WeekCard from '../components/WeekCard.jsx';
+import ProteinFilter from '../components/ProteinFilter.jsx';
+
+const PROTEIN_ORDER = ['Chicken', 'Beef', 'Pork', 'Sausage', 'Egg'];
 
 export default function Tracker() {
+  const [selected, setSelected] = useState([]);
+
   const locked = weeks.filter((w) => w.status === 'locked').length;
   const pct = Math.round((locked / PLACEMENT_TOTAL_WEEKS) * 100);
+
+  const options = useMemo(() => {
+    const counts = new Map();
+    for (const w of weeks) {
+      for (const p of w.proteins ?? []) counts.set(p, (counts.get(p) ?? 0) + 1);
+    }
+    return [...counts.entries()]
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => {
+        const ai = PROTEIN_ORDER.indexOf(a.name);
+        const bi = PROTEIN_ORDER.indexOf(b.name);
+        return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi) || a.name.localeCompare(b.name);
+      });
+  }, []);
+
+  const visible = useMemo(() => {
+    if (selected.length === 0) return weeks;
+    return weeks.filter((w) => selected.some((p) => (w.proteins ?? []).includes(p)));
+  }, [selected]);
+
+  const toggle = (name) =>
+    setSelected((cur) => (cur.includes(name) ? cur.filter((x) => x !== name) : [...cur, name]));
 
   return (
     <div className="wrap">
@@ -72,9 +100,26 @@ export default function Tracker() {
         <span className="note">5 boxes / week · Mon–Fri lunch</span>
       </div>
 
-      {weeks.map((w) => (
-        <WeekCard key={w.n} w={w} />
-      ))}
+      <div className="layout">
+        <ProteinFilter
+          options={options}
+          selected={selected}
+          onToggle={toggle}
+          onClear={() => setSelected([])}
+          shown={visible.length}
+          total={weeks.length}
+        />
+
+        <div className="logmain">
+          {visible.map((w) => (
+            <WeekCard key={w.n} w={w} />
+          ))}
+
+          {visible.length === 0 && (
+            <div className="empty">No weeks match that protein yet.</div>
+          )}
+        </div>
+      </div>
 
       <div className="foot">
         NOODLE — Shirakiku Japanese-Style Udon · 1kg / 10 bundles · ~$0.55–0.83 per bundle (brought from
