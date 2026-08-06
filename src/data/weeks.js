@@ -82,10 +82,49 @@ export const weeks = [
   {
     n: 5,
     dates: 'Jul 20 – 24, 2026',
+    status: 'locked',
+    components: [
+      { label: 'Omachi instant noodle', color: '#d8c9a8' },
+      { label: 'Cheddar bratwurst + hủ tiếu khô sauce', color: 'var(--chili)' },
+      { label: 'Raw cucumber', color: 'var(--scallion)' },
+      { label: 'Soy-marinated egg ×3/meal', color: 'var(--yolk)' },
+    ],
+    technique:
+      "Cheddar bratwurst boiled then sauced with hủ tiếu khô (dry noodle sauce) recipe, cook's version without carrot or wood ear mushroom. Omachi instant noodle at 1.5 packs/meal — first packaged-instant-noodle week, distinct from prior fresh-noodle weeks. Eaten with raw cucumber instead of a cooked/boiled vegetable.",
+    recipe: '/recipes',
+    breakdown:
+      'bratwurst $2.97 · eggs $2.43 (18ct) · cucumber $0.76 · Omachi noodle ~$7.50 (9 packs from a ~$20/24-pack box, per cook\'s recollection, not a verified receipt)',
+    total: '$13.66',
+    perBox: '$2.28 / portion',
+    photo: true,
+    img: 'images/week5.png',
+  },
+  {
+    n: 6,
+    dates: 'Jul 27 – 31, 2026',
+    status: 'locked',
+    components: [
+      { label: 'Rotini pasta (for color)', color: '#d8c9a8' },
+      { label: 'Beef + onion stir-fry', color: 'var(--chili)' },
+      { label: 'Soy-marinated egg ×3/meal', color: 'var(--yolk)' },
+    ],
+    technique:
+      'Nữi xào bò xào hành tây — rotini swapped in for color contrast against the beef, not traditional to the dish. Cooked in 2 batches (pan-size constraint): each batch = 1 pasta box, 1 onion, half the beef. Pork fat + garlic stir-fried until golden, sliced onion added, then soy sauce, salt, sugar, white wine (first use in rotation), fish sauce — beef stir-fried in, then pre-boiled pasta folded through at the end. Protein splurge week: overtime pay funded a full London Broil roast instead of the usual budget cut.',
+    recipe: '/recipes',
+    breakdown:
+      'London Broil Roast, Choice Angus $18.70 · Great Value Garden Rotini ×2 $2.48 · onion $1.68 · eggs $3.68 (2×12ct, 18/24 used, 6 reserved as snack)',
+    total: '$26.54',
+    perBox: '$4.42 / portion',
+    photo: true,
+    img: 'images/week6.jpg',
+  },
+  {
+    n: 7,
+    dates: 'Aug 3 – 7, 2026',
     status: 'tbd',
     components: [],
     technique:
-      'Candidates on deck: cà ri gà (southern-style chicken curry, ginger-free — reduced-liquid + browned-not-fried renovation planned) · velveted beef · xíu mại.',
+      "Candidates on deck: cà ri gà (southern-style chicken curry, ginger-free — reduced-liquid + browned-not-fried renovation planned) · xíu mại (protein variety, ground-pork based). Velveted beef technique effectively covered by Week 6's bare stir-fry, though not a true velveting marinade.",
     breakdown: null,
     total: null,
     perBox: null,
