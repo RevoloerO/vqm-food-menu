@@ -42,7 +42,7 @@ export const weeks = [
   },
   {
     n: 3,
-    proteins: ['Beef', 'Egg'],
+    proteins: ['Beef'],
     dates: 'Jul 6 – 10, 2026',
     status: 'locked',
     components: [
@@ -63,7 +63,7 @@ export const weeks = [
   },
   {
     n: 4,
-    proteins: ['Chicken', 'Egg'],
+    proteins: ['Chicken'],
     dates: 'Jul 13 – 17, 2026',
     status: 'locked',
     components: [
@@ -85,7 +85,7 @@ export const weeks = [
   },
   {
     n: 5,
-    proteins: ['Pork', 'Sausage', 'Egg'],
+    proteins: ['Pork', 'Sausage'],
     dates: 'Jul 20 – 24, 2026',
     status: 'locked',
     components: [
@@ -106,7 +106,7 @@ export const weeks = [
   },
   {
     n: 6,
-    proteins: ['Beef', 'Egg'],
+    proteins: ['Beef'],
     dates: 'Jul 27 – 31, 2026',
     status: 'locked',
     components: [
@@ -126,7 +126,7 @@ export const weeks = [
   },
   {
     n: 7,
-    proteins: ['Chicken', 'Pork', 'Egg'],
+    proteins: ['Chicken', 'Pork'],
     dates: 'Aug 3 – 7, 2026',
     status: 'locked',
     components: [

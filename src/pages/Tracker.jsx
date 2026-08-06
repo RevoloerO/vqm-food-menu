@@ -126,6 +126,9 @@ export default function Tracker() {
         home)
         <br />
         EGGS — 18-pack ~$2.43 (~$0.135 ea) · CARROT ~$1.32/pack · SPINACH ~$1.97/pack (half per week)
+        <br />
+        SOY-MARINATED EGG — standing side dish, present every week, so it carries no protein tag. The Egg
+        filter marks only weeks where egg is cooked into the meal itself.
       </div>
     </div>
   );
