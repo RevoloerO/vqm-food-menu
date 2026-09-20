@@ -214,7 +214,7 @@ export const weeks = [
     n: 11,
     proteins: ['Chicken'],
     dates: 'Aug 31 – Sep 4, 2026',
-    status: 'provisional',
+    status: 'locked',
     components: [
       { label: 'Shredded chicken (Gỏi gà)', color: 'var(--chili)' },
       { label: 'Red cabbage', color: 'var(--scallion)' },
@@ -234,7 +234,7 @@ export const weeks = [
     n: 12,
     proteins: ['Pork', 'Shrimp', 'Egg'],
     dates: 'Sep 7 – 11, 2026',
-    status: 'provisional',
+    status: 'locked',
     components: [
       { label: 'White rice', color: '#d8c9a8' },
       { label: 'Boneless pork chop', color: 'var(--chili)' },
