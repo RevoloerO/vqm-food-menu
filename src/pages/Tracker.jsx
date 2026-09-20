@@ -3,7 +3,7 @@ import { weeks, PLACEMENT_TOTAL_WEEKS } from '../data/weeks.js';
 import WeekCard from '../components/WeekCard.jsx';
 import ProteinFilter from '../components/ProteinFilter.jsx';
 
-const PROTEIN_ORDER = ['Chicken', 'Beef', 'Pork', 'Sausage', 'Egg'];
+const PROTEIN_ORDER = ['Chicken', 'Beef', 'Pork', 'Sausage', 'Fish', 'Shrimp', 'Egg'];
 
 export default function Tracker() {
   const [selected, setSelected] = useState([]);

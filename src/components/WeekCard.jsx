@@ -49,7 +49,7 @@ export default function WeekCard({ w }) {
             </div>
           )}
 
-          {w.photo === true && <div className="photo yes">✓ Photo confirmed — 5 containers</div>}
+          {w.photo === true && <div className="photo yes">✓ Photo confirmed</div>}
           {w.photo === false && <div className="photo no">✗ No photo yet — provisional until cooked</div>}
 
           {w.img && (
